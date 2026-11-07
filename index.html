@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Lesson for Kids</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">French lesson for kids</p>
+          <h1>Bonjour, petits explorateurs !</h1>
+          <p class="subtitle">
+            Listen and hear French with fun words, colors, numbers, and friendly phrases.
+          </p>
+          <div class="hero-actions">
+            <a href="#lesson-section" class="primary-btn">Start learning</a>
+            <button id="playAllBtn" class="secondary-btn" type="button">🔊 Listen and hear</button>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span>🇫🇷</span>
+        </div>
+      </header>
+
+      <main>
+        <section id="lesson-section" class="lesson-section">
+          <div class="section-heading">
+            <p class="eyebrow">Listen &amp; Hear</p>
+            <h2>French words to know</h2>
+          </div>
+          <div id="lessonGrid" class="lesson-grid"></div>
+        </section>
+
+        <section class="levels-section">
+          <div class="section-heading">
+            <p class="eyebrow">Three Levels</p>
+            <h2>Choose your lesson</h2>
+          </div>
+          <div class="level-buttons">
+            <button class="level-btn active" data-level="easy" type="button">Easy</button>
+            <button class="level-btn" data-level="medium" type="button">Medium</button>
+            <button class="level-btn" data-level="hard" type="button">Hard</button>
+          </div>
+        </section>
+
+        <section class="category-section">
+          <div class="section-heading">
+            <p class="eyebrow">Topic folders</p>
+            <h2>More practice</h2>
+          </div>
+          <div class="category-buttons">
+            <button class="category-btn active" data-category="school" type="button">School words</button>
+            <button class="category-btn" data-category="family" type="button">Family words</button>
+            <button class="category-btn" data-category="numbers" type="button">Numbers</button>
+          </div>
+        </section>
+
+        <section class="full-lesson-section">
+          <div class="section-heading">
+            <p class="eyebrow">Full Lesson</p>
+            <h2 id="lessonTitle">Lesson 1: Hello, friends!</h2>
+          </div>
+          <div id="fullLessonList" class="full-lesson-list"></div>
+        </section>
+
+        <section class="voice-challenge-section">
+          <div class="voice-card">
+            <p class="eyebrow">Voice challenge</p>
+            <h2>Repeat after me!</h2>
+            <div id="voicePrompt" class="voice-prompt">Bonjour</div>
+            <div class="voice-actions">
+              <button id="listenPromptBtn" class="primary-btn" type="button">🔊 Listen</button>
+              <button id="nextPromptBtn" class="secondary-btn" type="button">Next phrase</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="quiz-section">
+          <div class="quiz-card">
+            <p class="eyebrow">Mini quiz</p>
+            <h2>Quiz time!</h2>
+            <div id="starsDisplay" class="stars-display" aria-live="polite"></div>
+            <div id="goldMedal" class="gold-medal" style="display: none;">🥇✨</div>
+            <div id="quizQuestion" class="quiz-question"></div>
+            <div id="quizFeedback" class="quiz-feedback"></div>
+            <div id="answerButtons" class="answer-buttons"></div>
+            <div class="quiz-footer">
+              <button id="nextQuestion" class="primary-btn" type="button">Next question</button>
+              <p id="scoreText" class="score-text">Score: 0/0</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="math-game-section">
+          <div class="math-card">
+            <p class="eyebrow">Picture math game</p>
+            <h2>Count and solve!</h2>
+            <div id="mathQuestion" class="math-question"></div>
+            <div id="mathPicture" class="math-picture" aria-live="polite"></div>
+            <div id="mathAnswers" class="answer-buttons"></div>
+            <div class="quiz-footer">
+              <button id="nextMathQuestion" class="primary-btn" type="button">Next math question</button>
+              <p id="mathScoreText" class="score-text">Math score: 0/0</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="summary-section" id="summarySection" style="display: none;">
+          <div class="summary-card">
+            <p class="eyebrow">Great job!</p>
+            <h2>Summary page</h2>
+            <div id="summaryContent" class="summary-content"></div>
+            <button id="restartGame" class="primary-btn" type="button">Play again</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <h3>FRENCH IS THE BEST</h3>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
